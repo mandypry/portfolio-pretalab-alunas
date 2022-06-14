@@ -1,0 +1,52 @@
+/* primeiras propriedades: */
+* {
+    /* define a área de margem nos quatro lados do elemento */
+    margin: 0; 
+    /* distância entre o conteúdo de um elemento e suas bordas */
+    padding: 0;
+    /* para configurar uma ou mais das propriedades de contorno */
+    outline: 0;
+}
+
+body{
+    /* Definindo a fonte de todo nosso body */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+li {
+    /* retirando as bolinhas das nossas listas */
+    list-style: none;
+}
+
+.header-menu{
+    /* // Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens. */
+    display: flex;
+    position: fixed; /*Deixa o nosso header fixo*/
+    width: 100%; /*Largura*/
+    padding: 8px; /*Espaçamento dos 4 lados*/
+    padding-bottom: 32px; /*Espaçamento inferior*/
+    padding-top: 32px;/*Espaçamento superior*/
+    height: 60px;
+    background-color: #724796;
+}
+
+.header-menu nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.lista-menu{
+    display: flex;
+    justify-content: space-evenly; /*Espaçamento entre eles seja igual*/
+    width: 50%;
+    align-items: center;
+}
+
+/*Pegando os itens com tag a de dentro da nossa lista*/
+.lista-menu li>a {
+    color: #FFF;
+    font-size: 18px;
+    text-decoration: inherit;
+}
